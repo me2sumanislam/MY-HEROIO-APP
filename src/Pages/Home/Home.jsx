@@ -33,7 +33,13 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+
+      <div className="flex justify-center items-center h-screen">
+        <img src="/src/assets/hero.png" alt="" />
+      </div>
     </div>
+     
   );
 };
 
