@@ -3,6 +3,7 @@
  import Root from '../Pages/Root/Root'
  import Error from '../Pages/ErrorPage/Error'
 import Home from '../Pages/Home/Home';
+import Apps from '../Pages/Apps/Apps';
 
 
 
@@ -21,7 +22,11 @@ import Home from '../Pages/Home/Home';
             index: true,
             path:'/',
             Component: Home
-        }
+        },
+       {
+        path: "/apps",
+        Component: Apps //vaiya happs dichi file jate 2 app
+      },
     ]
   },
 ]);
