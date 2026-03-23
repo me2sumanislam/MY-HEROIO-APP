@@ -1,0 +1,282 @@
+ [
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733585.png",
+    "title": "ChatMaster",
+    "companyName": "TechSoft Ltd",
+    "id": 1,
+    "description": "A powerful messaging app for instant communication.",
+    "size": 45,
+    "reviews": 12000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 1000 }, { "name": "4 star", "count": 4000 }, { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1051/1051313.png",
+    "title": "PhotoSnap",
+    "companyName": "Pixel Studio",
+    "id": 2,
+    "description": "Capture and edit stunning photos easily.",
+    "size": 60,
+    "reviews": 8500,
+    "ratingAvg": 4.3,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 150 }, { "name": "2 star", "count": 250 }, { "name": "3 star", "count": 800 }, { "name": "4 star", "count": 3000 }, { "name": "5 star", "count": 4300 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2964/2964514.png",
+    "title": "FitLife",
+    "companyName": "Health Corp",
+    "id": 3,
+    "description": "Track your workouts and stay healthy.",
+    "size": 50,
+    "reviews": 9500,
+    "ratingAvg": 4.6,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 100 }, { "name": "2 star", "count": 200 }, { "name": "3 star", "count": 700 }, { "name": "4 star", "count": 3500 }, { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1159/1159641.png",
+    "title": "NoteEasy",
+    "companyName": "Simple Apps",
+    "id": 4,
+    "description": "Take notes quickly and organize tasks.",
+    "size": 30,
+    "reviews": 5000,
+    "ratingAvg": 4.2,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 120 }, { "name": "2 star", "count": 200 }, { "name": "3 star", "count": 600 }, { "name": "4 star", "count": 1800 }, { "name": "5 star", "count": 2280 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/727/727218.png",
+    "title": "MusicBeat",
+    "companyName": "SoundWave",
+    "id": 5,
+    "description": "Stream your favorite music anytime.",
+    "size": 70,
+    "reviews": 20000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 }, { "name": "2 star", "count": 400 }, { "name": "3 star", "count": 1500 }, { "name": "4 star", "count": 6000 }, { "name": "5 star", "count": 11800 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1163/1163474.png",
+    "title": "WeatherNow",
+    "companyName": "SkyTech",
+    "id": 6,
+    "description": "Get real-time weather updates instantly.",
+    "size": 25,
+    "reviews": 6000,
+    "ratingAvg": 4.1,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 900 }, { "name": "4 star", "count": 2000 }, { "name": "5 star", "count": 2600 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1170/1170678.png",
+    "title": "ShopEase",
+    "companyName": "MarketHub",
+    "id": 7,
+    "description": "Shop your favorite products online.",
+    "size": 55,
+    "reviews": 14000,
+    "ratingAvg": 4.4,
+    "downloads": 6000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 }, { "name": "2 star", "count": 500 }, { "name": "3 star", "count": 1200 }, { "name": "4 star", "count": 5000 }, { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/686/686589.png",
+    "title": "GameZone",
+    "companyName": "FunPlay",
+    "id": 8,
+    "description": "Enjoy a collection of exciting games.",
+    "size": 120,
+    "reviews": 22000,
+    "ratingAvg": 4.6,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 }, { "name": "2 star", "count": 600 }, { "name": "3 star", "count": 2000 }, { "name": "4 star", "count": 7000 }, { "name": "5 star", "count": 11900 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2436/2436702.png",
+    "title": "LearnPro",
+    "companyName": "EduTech",
+    "id": 9,
+    "description": "Learn new skills with online courses.",
+    "size": 80,
+    "reviews": 11000,
+    "ratingAvg": 4.5,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 1000 }, { "name": "4 star", "count": 4000 }, { "name": "5 star", "count": 5500 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2276/2276931.png",
+    "title": "Foodie",
+    "companyName": "FoodHub",
+    "id": 10,
+    "description": "Order food from your favorite restaurants.",
+    "size": 65,
+    "reviews": 17000,
+    "ratingAvg": 4.3,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 }, { "name": "2 star", "count": 500 }, { "name": "3 star", "count": 1500 }, { "name": "4 star", "count": 6000 }, { "name": "5 star", "count": 8600 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2092/2092663.png",
+    "title": "SecureVPN",
+    "companyName": "SafeNet",
+    "id": 11,
+    "description": "Browse securely with fast VPN service.",
+    "size": 40,
+    "reviews": 9000,
+    "ratingAvg": 4.4,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 900 }, { "name": "4 star", "count": 3500 }, { "name": "5 star", "count": 4100 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/826/826070.png",
+    "title": "TravelGo",
+    "companyName": "TripMate",
+    "id": 12,
+    "description": "Plan your trips and explore the world.",
+    "size": 75,
+    "reviews": 7800,
+    "ratingAvg": 4.2,
+    "downloads": 2700000,
+    "ratings": [
+      { "name": "1 star", "count": 250 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 800 }, { "name": "4 star", "count": 3000 }, { "name": "5 star", "count": 3450 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2454/2454282.png",
+    "title": "FinanceTrack",
+    "companyName": "MoneyWise",
+    "id": 13,
+    "description": "Manage your expenses and savings easily.",
+    "size": 35,
+    "reviews": 6700,
+    "ratingAvg": 4.3,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 150 }, { "name": "2 star", "count": 250 }, { "name": "3 star", "count": 700 }, { "name": "4 star", "count": 2500 }, { "name": "5 star", "count": 3100 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/4406/4406113.png",
+    "title": "VideoEdit Pro",
+    "companyName": "MediaLab",
+    "id": 14,
+    "description": "Edit videos like a professional.",
+    "size": 150,
+    "reviews": 13000,
+    "ratingAvg": 4.6,
+    "downloads": 5500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 }, { "name": "2 star", "count": 400 }, { "name": "3 star", "count": 1200 }, { "name": "4 star", "count": 5000 }, { "name": "5 star", "count": 7100 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3074/3074058.png",
+    "title": "KidsLearn",
+    "companyName": "EduKids",
+    "id": 15,
+    "description": "Fun learning app for kids.",
+    "size": 45,
+    "reviews": 5400,
+    "ratingAvg": 4.5,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 100 }, { "name": "2 star", "count": 150 }, { "name": "3 star", "count": 500 }, { "name": "4 star", "count": 2000 }, { "name": "5 star", "count": 2650 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2540/2540832.png",
+    "title": "NewsFlash",
+    "companyName": "DailyNews",
+    "id": 16,
+    "description": "Stay updated with latest news.",
+    "size": 28,
+    "reviews": 7200,
+    "ratingAvg": 4.1,
+    "downloads": 2600000,
+    "ratings": [
+      { "name": "1 star", "count": 250 }, { "name": "2 star", "count": 350 }, { "name": "3 star", "count": 900 }, { "name": "4 star", "count": 2800 }, { "name": "5 star", "count": 2900 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/906/906334.png",
+    "title": "TaskManager",
+    "companyName": "Productive Inc",
+    "id": 17,
+    "description": "Organize tasks and boost productivity.",
+    "size": 33,
+    "reviews": 6100,
+    "ratingAvg": 4.4,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 150 }, { "name": "2 star", "count": 200 }, { "name": "3 star", "count": 700 }, { "name": "4 star", "count": 2500 }, { "name": "5 star", "count": 2550 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/484/484582.png",
+    "title": "LanguageX",
+    "companyName": "GlobalLearn",
+    "id": 18,
+    "description": "Learn new languages easily.",
+    "size": 90,
+    "reviews": 10000,
+    "ratingAvg": 4.6,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 1000 }, { "name": "4 star", "count": 4000 }, { "name": "5 star", "count": 4500 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2091/2091665.png",
+    "title": "CleanerPro",
+    "companyName": "BoostTech",
+    "id": 19,
+    "description": "Clean and optimize your device.",
+    "size": 38,
+    "reviews": 8800,
+    "ratingAvg": 4.2,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 250 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 900 }, { "name": "4 star", "count": 3500 }, { "name": "5 star", "count": 3850 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/854/854878.png",
+    "title": "MapNavigator",
+    "companyName": "GeoTech",
+    "id": 20,
+    "description": "Navigate anywhere with ease.",
+    "size": 95,
+    "reviews": 15000,
+    "ratingAvg": 4.5,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 }, { "name": "2 star", "count": 400 }, { "name": "3 star", "count": 1200 }, { "name": "4 star", "count": 5000 }, { "name": "5 star", "count": 8100 }
+    ]
+  }
+]

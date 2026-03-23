@@ -21,7 +21,8 @@ import Apps from '../Pages/Apps/Apps';
         {
             index: true,
             path:'/',
-            Component: Home
+            Component: Home,
+            loader:()=> fetch('/public/Data.json')
         },
        {
         path: "/apps",

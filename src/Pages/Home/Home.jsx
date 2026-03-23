@@ -1,7 +1,11 @@
 import React from "react";
 import Trusted from "../Trusted/Trusted";
+import Trading from "../TradingApp/Trading";
+import { useLoaderData } from "react-router";
  
 const Home = () => {
+  const data = useLoaderData();
+  // console.log(data);
 
   return (
 
@@ -42,6 +46,7 @@ const Home = () => {
         <img src="/src/assets/hero.png" alt="" />
       </div>
               <Trusted></Trusted>
+              <Trading data={data}></Trading>
     </div>
      
   );
