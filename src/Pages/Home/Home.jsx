@@ -1,7 +1,10 @@
 import React from "react";
-
+import Trusted from "../Trusted/Trusted";
+ 
 const Home = () => {
+
   return (
+
     <div>
       <div className="flex flex-col items-center text-center px-4 py-12 bg-gray-100">
         <h1 className="text-6xl md:text-7xl font-bold text-[#1e293b] leading-tight">
@@ -16,7 +19,7 @@ const Home = () => {
           simpler, smarter, and more exciting. Our goal is to turn your ideas
           into digital experiences that truly make an impact.
         </p>
-
+ 
         <div className="flex flex-wrap justify-center gap-4 mb-10">
           <button className="flex items-center gap-2 px-6 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 shadow-sm transition-all">
             <img
@@ -35,9 +38,10 @@ const Home = () => {
       </div>
 
 
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center items-center ">
         <img src="/src/assets/hero.png" alt="" />
       </div>
+              <Trusted></Trusted>
     </div>
      
   );
