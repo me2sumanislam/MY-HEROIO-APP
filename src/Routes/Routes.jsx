@@ -26,7 +26,8 @@ import Apps from '../Pages/Apps/Apps';
         },
        {
         path: "/apps",
-        Component: Apps //vaiya happs dichi file jate 2 app
+        Component: Apps, // 
+        loader: ()=> fetch('/public/Data.json')
       },
     ]
   },

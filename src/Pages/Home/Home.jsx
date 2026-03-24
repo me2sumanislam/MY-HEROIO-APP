@@ -1,12 +1,13 @@
 import React from "react";
 import Trusted from "../Trusted/Trusted";
 import Trading from "../TradingApp/Trading";
-import { useLoaderData } from "react-router";
+import {  useLoaderData, useNavigate } from "react-router";
  
 const Home = () => {
   const data = useLoaderData();
+  const navigate = useNavigate()
   // console.log(data);
-
+ 
   return (
 
     <div>
@@ -47,6 +48,14 @@ const Home = () => {
       </div>
               <Trusted></Trusted>
               <Trading data={data}></Trading>
+              <div className="flex justify-center mt-10 w-full">
+        <button 
+          onClick={() => navigate('/apps')}  
+          className="btn m-5 bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-10 py-2.5 rounded-lg"
+        >
+          Show All
+        </button>
+      </div>
     </div>
      
   );
