@@ -4,6 +4,7 @@
  import Error from '../Pages/ErrorPage/Error'
 import Home from '../Pages/Home/Home';
 import Apps from '../Pages/Apps/Apps';
+import AppDetails from '../Pages/APPDetails/AppsDetails';
 
 
 
@@ -29,6 +30,11 @@ import Apps from '../Pages/Apps/Apps';
         Component: Apps, // 
         loader: ()=> fetch('/public/Data.json')
       },
+      {
+  path: "/app/:id",
+  element: <AppDetails />,
+ loader: ()=> fetch('/public/Data.json') 
+}
     ]
   },
 ]);

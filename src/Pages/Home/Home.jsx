@@ -3,6 +3,7 @@ import Trusted from "../Trusted/Trusted";
 import Trading from "../TradingApp/Trading";
 import {  useLoaderData, useNavigate } from "react-router";
  
+ 
 const Home = () => {
   const data = useLoaderData();
   const navigate = useNavigate()

@@ -1,44 +1,58 @@
  import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router";  
 
 const Trending = () => {
   const [data, setData] = useState([]);
-
+  const navigate = useNavigate();  
   useEffect(() => {
-    fetch("/Data.json")   
+    fetch("/Data.json") 
       .then((res) => res.json())
       .then((jsonData) => setData(jsonData))
-   
+      .catch((err) => console.error("Data fetch error:", err));  
   }, []);
 
   return (
-    <div>
-      <h2 className="text-2xl font-bold mb-6 text-center mt-10">Trending Apps</h2>
-      <p className="text-center ">Explore All Trending Apps on the Market developed by us</p>
+    <div className="container mx-auto px-4">
+      <h2 className="text-3xl font-bold mb-2 text-center mt-10 text-[#1e293b]">Trending Apps</h2>
+      <p className="text-center text-gray-500 mb-10">Explore All Trending Apps on the Market developed by us</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
         {data.slice(0, 8).map((app) => {
-          const { image, title, ratingAvg, downloads, id,  } = app;
-          console.log(image)
+          const { image, title, ratingAvg, downloads, id } = app;
+          
           return (
-            <div key={id} className="border p-4 rounded-xl">
-              <img
-                src={image}       
-                alt={title}
-                className="w-45  object-cover"
-              />
-              <h3 className="text-xl font-bold">{title}</h3>
-             <div className="flex justify-between">   
-                     <p>⭐ {ratingAvg}</p>
-              <p>⬇️ {downloads.toLocaleString()}</p>
-             </div>
+            <div 
+              key={id} 
+              onClick={() => navigate(`/app/${id}`)}  
+              className="border p-5 rounded-2xl shadow-sm hover:shadow-xl transition-all cursor-pointer bg-white group"
+            >
+              <div className="flex justify-center mb-4">
+                <img
+                  src={image || "https://via.placeholder.com/150"} 
+                  alt={title}
+                  className="w-32 h-32 object-contain rounded-2xl group-hover:scale-105 transition-transform"
+                />
+              </div>
+              
+              <h3 className="text-xl font-bold text-[#1e293b] mb-3 truncate">{title}</h3>
+              
+              <div className="flex justify-between items-center text-sm font-medium"> 
+                <p className="text-orange-500 flex items-center gap-1">
+                  ⭐ {ratingAvg}
+                </p>
+                <p className="text-gray-400 flex items-center gap-1">
+                  ⬇️ {downloads?.toLocaleString()}
+                </p>
+              </div>
+              
+              <button className="w-full mt-4 py-2 bg-gray-50 text-[#8b5cf6] font-semibold rounded-lg group-hover:bg-[#8b5cf6] group-hover:text-white transition-colors">
+                View Details
+              </button>
             </div>
-            
           );
-        
         })}
       </div>
     </div>
-    
   );
 };
 
