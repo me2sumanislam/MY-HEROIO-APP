@@ -8,7 +8,7 @@ const Trending = () => {
     fetch("/Data.json") 
       .then((res) => res.json())
       .then((jsonData) => setData(jsonData))
-      .catch((err) => console.error("Data fetch error:", err));  
+      
   }, []);
 
   return (
@@ -45,9 +45,6 @@ const Trending = () => {
                 </p>
               </div>
               
-              <button className="w-full mt-4 py-2 bg-gray-50 text-[#8b5cf6] font-semibold rounded-lg group-hover:bg-[#8b5cf6] group-hover:text-white transition-colors">
-                View Details
-              </button>
             </div>
           );
         })}
