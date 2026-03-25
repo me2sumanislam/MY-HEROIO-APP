@@ -30,7 +30,7 @@ export const InstallProvider = ({ children }) => {
       prev.filter((app) => Number(app.id) !== Number(id))
     );
 
-    toast.error(`uninstall SucessFull `, {
+    toast.error(`Uninstalled Successfully `, {
       position: "top-right",
       autoClose: 1500,
       theme: "colored",

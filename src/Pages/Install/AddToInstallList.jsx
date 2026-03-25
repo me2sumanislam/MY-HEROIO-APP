@@ -4,9 +4,8 @@ import { useInstall } from '../context/InstallContext';
 const AddToInstallList = () => {
   const { installedApps, removeFromInstallList } = useInstall();
   
-  const [sortOption, setSortOption] = useState(""); // "" = no sort, "high" = high to low, "low" = low to high
-
-  // Sorted apps using useMemo for performance
+  const [sortOption, setSortOption] = useState("");  
+ 
   const sortedApps = useMemo(() => {
     if (!sortOption) return [...installedApps];
 
@@ -15,17 +14,16 @@ const AddToInstallList = () => {
       const ratingB = parseFloat(b?.ratingAvg) || 0;
 
       if (sortOption === "high") {
-        return ratingB - ratingA; // High to Low
+        return ratingB - ratingA;  
       } else {
-        return ratingA - ratingB; // Low to High
+        return ratingA - ratingB;  
       }
     });
   }, [installedApps, sortOption]);
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 min-h-screen">
-      
-      {/* Header Section */}
+  
       <div className="text-center mb-12">
         <h1 className="text-4xl font-extrabold text-[#1e293b] mb-3">
           Your Installed Apps
@@ -35,7 +33,7 @@ const AddToInstallList = () => {
         </p>
       </div>
 
-      {/* Count Header + Sort Dropdown */}
+ 
       <div className="flex justify-between items-center mb-6 border-b pb-4">
         <h2 className="font-bold text-xl text-[#1e293b]">
           {sortedApps.length} Apps Found
@@ -65,7 +63,7 @@ const AddToInstallList = () => {
         </details>
       </div>
 
-      {/* Apps List */}
+ 
       <div className="space-y-5">
         {sortedApps.length > 0 ? (
           sortedApps.map((app) => (
@@ -74,7 +72,7 @@ const AddToInstallList = () => {
               className="flex items-center justify-between bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-all"
             >
               <div className="flex items-center gap-6">
-                {/* App Icon */}
+ 
                 <div className="w-20 h-20 bg-gray-50 rounded-2xl p-2 border border-gray-50">
                   <img
                     src={app?.image || "https://via.placeholder.com/80"}
@@ -83,7 +81,7 @@ const AddToInstallList = () => {
                   />
                 </div>
 
-                {/* App Info */}
+ 
                 <div>
                   <h3 className="font-bold text-[#1e293b] text-xl mb-1">
                     {app.title}
@@ -96,7 +94,7 @@ const AddToInstallList = () => {
                 </div>
               </div>
 
-              {/* Uninstall Button */}
+          
               <button
                 onClick={() => removeFromInstallList(app.id, app.title)}
                 className="bg-[#25D366] hover:bg-[#20ba5a] text-white px-8 py-2.5 rounded-xl font-bold transition-all active:scale-95"
@@ -106,7 +104,7 @@ const AddToInstallList = () => {
             </div>
           ))
         ) : (
-          /* Empty State */
+    
           <div className="text-center py-24 bg-gray-50 rounded-[40px] border-2 border-dashed border-gray-200">
             <h2 className="text-3xl text-gray-400">No apps installed yet</h2>
           </div>
