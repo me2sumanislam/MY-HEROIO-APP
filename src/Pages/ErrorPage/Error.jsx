@@ -9,10 +9,10 @@ const Error = () => {
         alt="404 Error"
         className="w-80 h-auto mb-8 mx-auto"
       />
-
+           <h2 className="text-3xl font-bold">oops, page not found ! </h2>
       <Link
         to="/"
-        className="btn bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-10 py-3 rounded-xl font-bold transition-all active:scale-95 shadow-lg no-underline"
+        className=" mt-10 btn bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-10 py-3 rounded-xl font-bold transition-all active:scale-95 shadow-lg no-underline"
       >
          Go Back !
       </Link>
