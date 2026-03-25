@@ -1,8 +1,26 @@
- import React from 'react';
+ import React, { useState, useMemo } from 'react';
 import { useInstall } from '../context/InstallContext';
 
 const AddToInstallList = () => {
   const { installedApps, removeFromInstallList } = useInstall();
+  
+  const [sortOption, setSortOption] = useState(""); // "" = no sort, "high" = high to low, "low" = low to high
+
+  // Sorted apps using useMemo for performance
+  const sortedApps = useMemo(() => {
+    if (!sortOption) return [...installedApps];
+
+    return [...installedApps].sort((a, b) => {
+      const ratingA = parseFloat(a?.ratingAvg) || 0;
+      const ratingB = parseFloat(b?.ratingAvg) || 0;
+
+      if (sortOption === "high") {
+        return ratingB - ratingA; // High to Low
+      } else {
+        return ratingA - ratingB; // Low to High
+      }
+    });
+  }, [installedApps, sortOption]);
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 min-h-screen">
@@ -17,17 +35,40 @@ const AddToInstallList = () => {
         </p>
       </div>
 
-      {/* Count Header */}
+      {/* Count Header + Sort Dropdown */}
       <div className="flex justify-between items-center mb-6 border-b pb-4">
         <h2 className="font-bold text-xl text-[#1e293b]">
-          {installedApps.length} Apps Found
+          {sortedApps.length} Apps Found
         </h2>
+
+        <details className="dropdown">
+          <summary className="btn m-1">Sort by Rating</summary>
+          <ul className="menu dropdown-content bg-base-100 rounded-box z-10 w-56 p-2 shadow-sm">
+            <li>
+              <a 
+                onClick={() => setSortOption("high")}
+                className={sortOption === "high" ? "active" : ""}
+              >
+                High to Low
+              </a>
+            </li>
+            <li>
+              <a 
+                onClick={() => setSortOption("low")}
+                className={sortOption === "low" ? "active" : ""}
+              >
+               Low to High
+              </a>
+            </li>
+             
+          </ul>
+        </details>
       </div>
 
       {/* Apps List */}
       <div className="space-y-5">
-        {installedApps.length > 0 ? (
-          installedApps.map((app) => (
+        {sortedApps.length > 0 ? (
+          sortedApps.map((app) => (
             <div
               key={app.id}
               className="flex items-center justify-between bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-all"

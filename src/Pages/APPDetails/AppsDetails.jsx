@@ -19,7 +19,7 @@ const AppDetails = () => {
   if (!apps) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen">
-        <h2 className="text-3xl font-bold text-red-500">App Not Found!</h2>
+        <h2 className="text-3xl font-bold bg-[#25D366] ">App Not Found!</h2>
         <button
           onClick={() => navigate(-1)}
           className="mt-4 text-blue-500 underline"
@@ -30,7 +30,7 @@ const AppDetails = () => {
     );
   }
 
-  // Install
+ 
   const handleInstall = () => {
     addToInstallList(apps);
 
@@ -44,8 +44,7 @@ const AppDetails = () => {
       navigate("/Installation");
     }, 1000);
   };
-
-  // Uninstall
+ 
   const handleUninstall = () => {
     removeFromInstallList(Number(apps.id));
 
@@ -60,7 +59,7 @@ const AppDetails = () => {
     <div className="bg-white min-h-screen font-sans">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         <div className="flex flex-col md:flex-row gap-10 items-start">
-          {/* Image */}
+   
           <div className="w-full md:w-72 h-72 rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-4">
             <img
               src={apps.image || "https://via.placeholder.com/300"}
@@ -69,7 +68,7 @@ const AppDetails = () => {
             />
           </div>
 
-          {/* Info */}
+     
           <div className="flex-1">
             <h1 className="text-4xl font-extrabold text-[#1e293b] mb-2">
               {apps.title}
@@ -92,8 +91,7 @@ const AppDetails = () => {
                 <p className="text-2xl font-black">54K</p>
               </div>
             </div>
-
-            {/* Button */}
+ 
             <div className="flex gap-4">
               {!isInstalled ? (
                 <button
@@ -116,7 +114,7 @@ const AppDetails = () => {
 
         <hr className="my-12 border-gray-100" />
 
-        {/* Ratings */}
+   
         <div className="mb-16">
           <h2 className="text-2xl font-bold mb-8 text-[#1e293b]">Ratings</h2>
           {[5, 4, 3, 2, 1].map((star) => (
@@ -132,7 +130,7 @@ const AppDetails = () => {
           ))}
         </div>
 
-        {/* Description */}
+ 
         <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
           <h2 className="text-2xl font-bold mb-6 text-[#1e293b]">Description</h2>
           <p className="text-gray-600 leading-relaxed whitespace-pre-line">

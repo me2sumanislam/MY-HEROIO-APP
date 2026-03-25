@@ -38,7 +38,7 @@ const link = <>
         </div>
         <div>
            
-                {/* <a className="text-[#6366f1] font-bold text-xl">Hero.Io</a> */}
+           
                  <a className="text-[#6366f1] font-bold text-xl"> <NavLink to="/">Hero.Io</NavLink></a> 
         </div>
        </div>
