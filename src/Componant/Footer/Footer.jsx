@@ -1,4 +1,5 @@
  import React from "react";
+  import flogo  from "../../assets/logo.png"
 import { 
   FaSquareXTwitter, 
   FaSquareInstagram, 
@@ -16,9 +17,9 @@ const Footer = () => {
       
           <div className="flex items-center gap-3 mb-6">
             <img 
-              src="/src/assets/logo.png" 
+              src={flogo}
               alt="Hero.Io Logo" 
-              className="w-9 h-9"
+              className="w-9 "
             />
             <NavLink to="/" className="text-[#6366f1] font-bold text-2xl">
               Hero.Io
