@@ -2,7 +2,9 @@ import React from "react";
 import Trusted from "../Trusted/Trusted";
 import Trading from "../TradingApp/Trading";
 import {  useLoaderData, useNavigate } from "react-router";
+ import playStore  from "/src/assets/playstore.png"
  
+ import appicon from "/src/assets/applelogo.png"
  
 const Home = () => {
   const data = useLoaderData();
@@ -29,7 +31,7 @@ const Home = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-10">
           <button className="flex items-center gap-2 px-6 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 shadow-sm transition-all">
             <img
-              src="/src/assets/playstore.png"
+              src={playStore} 
               alt="googleplay"
               className="h-6"
             />
@@ -37,7 +39,7 @@ const Home = () => {
           </button>
 
           <button className="flex items-center gap-2 px-6 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 shadow-sm transition-all">
-            <img src="/src/assets/applelogo.png" alt="AS" className="h-6" />
+            <img src={appicon}alt="AS" className="h-6" />
             <span className="font-semibold text-gray-700">App Store</span>
           </button>
         </div>

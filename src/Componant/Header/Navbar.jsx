@@ -1,6 +1,6 @@
  import React from 'react'
 import { NavLink } from 'react-router'
-  
+import icon from "/src/assets/logo.png"
 
 
 
@@ -34,7 +34,7 @@ const link = <>
         <div>
             <img 
             className='w-8'
-            src="/src/assets/logo.png" alt="heroLogo" />
+            src={icon} alt="heroLogo" />
         </div>
         <div>
            
